@@ -62,6 +62,10 @@ class enrol_manual_potential_participant extends user_selector_base {
                         $additionalWhere[] = "substring_index(username, '@', -1) = '" . $value->rule . "'";
                         break;
 
+                    case 2:
+                        $additionalWhere[] = "(SELECT data FROM {user_info_field} AS uif LEFT JOIN {user_info_data} AS uid ON uid.fieldid = uif.id AND uif.shortname = '{$value->customprofilefield}' WHERE u.id = uid.userid) = '{$value->rule}'";
+                        break;
+                    
                     default:
                         break;
                 }
