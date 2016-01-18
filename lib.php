@@ -21,7 +21,7 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-function local_saml_siteenrol_extends_settings_navigation($settingsnav, $context) {
+function local_saml_siteenrol_extend_settings_navigation($settingsnav, $context) {
     global $CFG, $PAGE;
 
     // Only let users with the appropriate capability see this settings item.
