@@ -36,3 +36,4 @@ $string['permissions'] = 'Permissions';
 $string['addnewcategorypermission'] = 'Add new rule';
 $string['siterulesfor'] = 'Site rules for';
 $string['backtocategories'] = 'Back to categories';
+$string['saml_siteenrol:addorremoveusers'] = 'Add/remove users';
